@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#E0E4E8"/>
+  <rect x="80" y="100" width="240" height="160" rx="8" fill="#7C8B6E" opacity="0.4"/>
+  <rect x="90" y="110" width="220" height="20" rx="4" fill="#7C8B6E" opacity="0.3"/>
+  <rect x="90" y="140" width="220" height="110" rx="4" fill="white" opacity="0.5"/>
+  <text x="200" y="310" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" fill="#6B6B6B">Website Project</text>
+</svg>

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Helen Liu — Portfolio</title>
-  <meta name="description" content="Portfolio of Helen Liu — art, photography, and creative projects." />
+  <title>Project — Helen Liu</title>
+  <meta name="description" content="Project detail — Helen Liu portfolio." />
 
   <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,13 +17,11 @@
 <body>
 
   <!-- ============================================================
-       NAVIGATION BAR
-       Left:  Hamburger menu | Helen Liu | Mail icon
-       Right: Projects | About Me (hidden if page can't scroll)
+       NAVIGATION BAR (same as index.html)
+       Links point back to index.html sections.
        ============================================================ -->
   <nav class="nav-bar" id="navbar">
     <div class="nav-left">
-      <!-- Hamburger menu button -->
       <button class="hamburger-btn" id="hamburger-btn" aria-label="Open menu">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="3" y1="6" x2="21" y2="6" />
@@ -32,10 +30,8 @@
         </svg>
       </button>
 
-      <!-- Name -->
       <a href="index.html" class="nav-name">Helen Liu</a>
 
-      <!-- Mail icon -->
       <a href="mailto:work.helenliu@gmail.com" class="nav-mail" aria-label="Send email">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <rect x="2" y="4" width="20" height="16" rx="2" />
@@ -44,48 +40,24 @@
       </a>
     </div>
 
-    <!-- Right-side links (hidden on mobile or if page isn't scrollable) -->
     <div class="nav-right" id="nav-right-links">
-      <a href="#projects" class="nav-link">Projects</a>
-      <a href="#about" class="nav-link">About Me</a>
+      <a href="index.html#projects" class="nav-link">Projects</a>
+      <a href="index.html#about" class="nav-link">About Me</a>
     </div>
 
-    <!-- Dropdown menu (opened by hamburger) -->
     <div class="nav-dropdown" id="nav-dropdown">
-      <a href="#projects" class="nav-dropdown-link">Projects</a>
-      <a href="#about" class="nav-dropdown-link">About Me</a>
+      <a href="index.html#projects" class="nav-dropdown-link">Projects</a>
+      <a href="index.html#about" class="nav-dropdown-link">About Me</a>
     </div>
   </nav>
 
   <!-- ============================================================
-       MAIN CONTENT
+       PROJECT DETAIL
+       Content is rendered by js/project-page.js based on the
+       ?id= query parameter in the URL.
        ============================================================ -->
-  <main>
-
-    <!-- ---- Projects Section ---- -->
-    <section class="section" id="projects">
-      <div class="project-grid" id="project-grid">
-        <!-- Rendered automatically by js/main.js from js/projects.js -->
-      </div>
-    </section>
-
-    <hr class="section-divider" />
-
-    <!-- ============================================================
-         ABOUT ME SECTION
-         To edit, simply change the text below.
-         The h1 is your name (large text).
-         The p is your bio/description (smaller text).
-         ============================================================ -->
-    <section class="about-section" id="about">
-      <h1 class="about-name">Helen Liu</h1>
-      <p class="about-text">
-        Artist, photographer, and creative developer with a passion for visual
-        storytelling. Exploring the intersection of art, technology, and design
-        through 2D and 3D mediums. Always curious, always creating.
-      </p>
-    </section>
-
+  <main class="project-detail" id="project-detail">
+    <!-- Populated by JavaScript -->
   </main>
 
   <!-- ---- Footer ---- -->
@@ -95,6 +67,6 @@
 
   <!-- Scripts -->
   <script src="js/projects.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/project-page.js"></script>
 </body>
 </html>
